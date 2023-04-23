@@ -1,0 +1,79 @@
+void setup() {
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  
+}
+void loop() {
+//Heartbeat green  
+  digitalWrite(8, HIGH); 
+  delay(185);
+
+  digitalWrite(8, LOW); 
+  delay(185);
+
+  digitalWrite(8, HIGH); 
+  delay(185);
+
+  digitalWrite(8, LOW);
+  delay(185);
+  
+  digitalWrite(4, HIGH);
+  delay(125);
+  digitalWrite(5, HIGH);
+  delay(125);
+  digitalWrite(6, HIGH);
+  delay(125);
+  digitalWrite(7, HIGH);
+  delay(125);
+  
+  //PAUSE IN BETWEEN
+  //digitalWrite(8, LOW); 
+  //delay(185);
+////////////////////////////////
+  digitalWrite(8, HIGH); 
+  delay(185);
+
+  digitalWrite(8, LOW); 
+  delay(185);
+
+  digitalWrite(8, HIGH); 
+  delay(185);
+
+  digitalWrite(8, LOW);
+  delay(185);
+  
+  digitalWrite(7, LOW);
+  delay(125);
+  digitalWrite(6, LOW);
+  delay(125);
+  digitalWrite(5, LOW);
+  delay(125);
+  digitalWrite(4, LOW);
+  delay(125);
+  //digitalWrite(4, HIGH);
+  //delay(125);
+/////
+  digitalWrite(8, HIGH); 
+  delay(185);
+
+  digitalWrite(8, LOW); 
+  delay(185);
+
+  digitalWrite(8, HIGH); 
+  delay(185);
+
+  digitalWrite(8, LOW);
+  delay(185);
+//////
+  digitalWrite(4, HIGH);
+  delay(125);
+  digitalWrite(5, HIGH);
+  delay(125);
+  digitalWrite(6, HIGH);
+  delay(125);
+  digitalWrite(7, HIGH);
+  delay(125); 
+}
