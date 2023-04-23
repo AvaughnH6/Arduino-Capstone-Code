@@ -1,0 +1,74 @@
+void setup() {
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  
+}
+void loop() {
+  
+  digitalWrite(4, HIGH); 
+  digitalWrite(5, HIGH); 
+  digitalWrite(6, HIGH); 
+  digitalWrite(7, HIGH);
+
+  delay(150);
+  digitalWrite(8, HIGH);
+  delay(100);
+
+//4 FLASH  
+  digitalWrite(4, LOW);
+  delay(200);
+  digitalWrite(4, HIGH);
+  delay(100);
+  digitalWrite(4, LOW);
+  delay(100);
+  digitalWrite(4, HIGH);
+  delay(100);
+
+//5 FLASH  
+  digitalWrite(5, LOW);
+  delay(200);
+  digitalWrite(5, HIGH);
+  delay(100);
+  digitalWrite(5, LOW);
+  delay(100);
+  digitalWrite(5, HIGH);
+  delay(100);
+
+//6 FLASH
+  
+  digitalWrite(6, LOW);
+  delay(100);
+  digitalWrite(6, HIGH);
+  delay(100);
+  digitalWrite(6, LOW);
+  delay(100);
+  digitalWrite(6, HIGH);
+  delay(100);
+
+  //7 FLASH
+  digitalWrite(7, LOW);
+  delay(100);
+  digitalWrite(7, HIGH);
+  delay(100);
+  digitalWrite(7, LOW);
+  delay(100);
+  digitalWrite(7, HIGH);
+  delay(100);
+
+//BACK TWO ON THEN OFF FRONT TWO ON
+  digitalWrite(4, LOW);
+  digitalWrite(5, LOW);
+  delay(350);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  delay(350);
+  digitalWrite(4, HIGH);
+  digitalWrite(5, HIGH);
+  delay(350);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  delay(1000); 
+}
